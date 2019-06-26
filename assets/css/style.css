@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(54, 63, 66);
+}
+img{
+    width:100%;
+}
+.num1, .num2{
+    float: left;
+}
+.jewel{
+    float: left;
+    width:50px;
+
+}
+.scoreboard{
+    clear: both;
+}
