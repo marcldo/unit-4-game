@@ -31,20 +31,24 @@ function setMyTotal(input) {
     myTotal += input;
     $("#myTotal").text(myTotal);
     checkTotal();
-}
+};
 
 function checkTotal() {
     if (myTotal === numToGuess) {
         wins++;
+        $("#wins").text(wins);
         alert("You Win");
         myTotal = null;
         setValues();
+        setMyTotal(0);
     }
     else if (myTotal > numToGuess) {
         losses++;
+        $("#losses").text(losses);
         alert("You Lose");
         myTotal = null;
         setValues();
+        setMyTotal(0)
     }
 };
 
