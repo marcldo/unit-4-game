@@ -72,3 +72,22 @@ $("#yellow").on("click", function () {
     console.log("yellow is clicked value: " + jYellow);
 });
 
+
+const modal = $("#helpModal");
+const btn = $('#helpButton');
+const span = $('.close');
+
+btn.on("click", function () {
+    modal.css("display", "block");
+    console.log("help clicked");
+});
+
+span.on("click", function () {
+    modal.css("display", "none");
+});
+
+$(window).on("click", function () {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+})
