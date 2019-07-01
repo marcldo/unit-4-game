@@ -1,17 +1,78 @@
+
+
 body{
     background-color: rgb(54, 63, 66);
-    color: #cccccc;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
 }
 img{
     width:100%;
 }
-.num1, .num2{
-    float: left;
+
+.container{
+width:380px;
+height:650px;
+background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin:0 auto;
+border-radius: 25px;
+box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header{
+    width:85%;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+.nums{
+    width:85%;
+    height:45%;
+    background-color: #ffffff;
+    color: black;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+.num1{
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 150px;
+    height:150px;
+    font-size:80px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 100%;
+    color: #ffffff;
+    line-height: 150px;
+}
+
+.num2{
+    width: 100px;
+    height:100px; 
+    font-size:75px;
+    margin: 15px auto;
+    padding-top:30px;
+    text-align: center;
+}
+
+.jewels{
+    width: 85%;
+    margin: 25px auto;
 }
 .jewel{
+    padding: 5px;
     float: left;
-    width:50px;
-
+    width:25%;
+    box-sizing: border-box;
 }
 .scoreboard{
     clear: both;
